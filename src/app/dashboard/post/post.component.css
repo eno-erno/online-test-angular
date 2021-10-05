@@ -1,0 +1,2 @@
+.post-page h1::after{content: '';border-bottom: 4px solid #5086db;width:5rem;display: block;margin: auto;border-radius: 3px;}
+.searching input{border-radius: 30px;}

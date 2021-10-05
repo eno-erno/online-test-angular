@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 mx-sm-auto">
+            <h1 class="text-center mb-0">Post</h1>
+            <i (click)="backClicked()" style="font-size: 1.5rem !important; cursor: pointer;" class="fa fa-arrow-left text-dark"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-5 mx-sm-auto">
+            <div class="list-post">
+                <dl class="row">
+                    <dt class="col-sm-12">{{ getDataPost.title }}</dt>
+                    <dd class="col-sm-12">
+                        <p>{{ getDataPost.body }}</p>
+                        <div>
+                            <a routerLink="/detail-comment/{{ getDataPost.id }}" class="d-inline-block">
+                                <i class="fa fa-comment-o"></i> {{getDataComment.length}}
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

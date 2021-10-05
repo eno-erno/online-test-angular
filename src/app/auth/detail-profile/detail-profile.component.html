@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 mx-sm-auto">
+            <h1 class="text-center mb-0">Post</h1>
+            <i (click)="backClicked()" style="font-size: 1.5rem !important; cursor: pointer;" class="fa fa-arrow-left text-dark"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-5 mx-sm-auto">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Username : </strong>{{getDataProfile.name}}</li>
+                <li class="list-group-item"><strong>Email : </strong>{{getDataProfile.email}}</li>
+                <li class="list-group-item"><strong>Address : </strong>{{getDataProfile.address.street}}, {{getDataProfile.address.suite}}, {{getDataProfile.address.city}}</li>
+                <li class="list-group-item"><strong>Phone : </strong>{{getDataProfile.phone}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
